@@ -32,6 +32,7 @@ const css = `
   .header-tag { display: inline-block; background: #eef2ff; color: #4f6ef7; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; margin-bottom: 14px; }
   .header h1 { font-size: clamp(20px, 5vw, 30px); font-weight: 700; color: #111; line-height: 1.15; margin-bottom: 6px; }
   .header p { font-size: 14px; color: #888; }
+  .header-body { max-width: 620px; margin: 16px auto 0; font-size: 14px; color: #555; line-height: 1.75; text-align: left; }
   .nav { display: flex; background: #fff; border-bottom: 1px solid #e8e8e5; padding: 0 16px; gap: 4px; }
   .nav-btn { padding: 12px 16px; background: none; border: none; border-bottom: 2px solid transparent; color: #888; font-size: 13px; font-weight: 500; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: all 0.15s; margin-bottom: -1px; }
   .nav-btn.active { color: #4f6ef7; border-bottom-color: #4f6ef7; }
@@ -122,6 +123,7 @@ export default function App() {
           <div className="header-tag">Strumento per giornalisti</div>
           <h1>Quanti articoli vale?</h1>
           <p>Calcola il costo reale del tuo lavoro a pezzo</p>
+          <p className="header-body">I quotidiani e i giornali italiani si basano essenzialmente sul lavoro di decine di collaboratori pagati a pezzo, che vanno da pochissimi euro fino a qualche decina. Gli autonomi, i collaboratori, le giornaliste e i giornalisti che non hanno la fortuna di avere un contratto di assunzione, ogni giorno scrivono pezzi originali raccontando quanto accade per le strade e nei palazzi, battendo il territorio palmo a palmo, garantendo un minimo di qualità dell'informazione. Nella stragrande maggioranza dei casi non hanno la fortuna di avere i riflettori puntati, le loro firme non compaiono nelle rassegne stampa nazionali, ma sono il punto di riferimento per la comunità, l'ultima speranza per i più deboli che hanno bisogno di far sentire la propria voce, raccontare la loro storia. Le giornaliste e i giornalisti sanno che in cambio dei loro articoli, riceveranno solo pochi euro. Di solito si scrive un pezzo al giorno. I più fortunati riempiono una pagina, con tre o quattro articoli, dedicando molto e prezioso tempo. Come potrete immaginare utilizzando questo semplice tool che calcola quanti articoli servono per avere un minimo di vita dignitosa, fare giornalismo in un mondo in cui la verità è sempre più cercata, ma sempre più nascosta da fake news e algoritmi, è possibile solo grazie ad una forte passione. Quando leggete un articolo, pensateci.</p>
         </div>
         <div className="nav">
           {[["calcolatore", "Calcolatore"], ["beni", "Beni"]].map(([v, l]) => (
