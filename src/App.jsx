@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const DEFAULT_BENI = [
-  { id: 1, nome: "Caffè al bar", prezzo: 1.3, emoji: "☕" },
+  { id: 1, nome: "Caffè al bar", prezzo: 1.2, emoji: "☕" },
   { id: 2, nome: "Pranzo al ristorante", prezzo: 18, emoji: "🍝" },
   { id: 3, nome: "Spesa settimanale", prezzo: 80, emoji: "🛒" },
   { id: 4, nome: "Bolletta luce (mensile)", prezzo: 90, emoji: "💡" },
